@@ -10,6 +10,6 @@ RUN apt-get -y update \
   && cp -R ./bmszc-ujpesti.e-kreta.hu/* /usr/share/nginx/html \
   && apt-get -y clean
  
- EXPOSE 80, 443
+ EXPOSE 80 443
 
 WORKDIR /root
