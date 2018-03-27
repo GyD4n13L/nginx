@@ -7,7 +7,7 @@ RUN apt-get -y update \
   && apt-get -y install curl \
   && apt-get install wget \
   && wget 'https://bmszc-ujpesti.e-kreta.hu' -r -q \
-  && cp ./bmszc-ujpesti.e-kreta.hu /usr/share/nginx/html \
+  && cp -R ./bmszc-ujpesti.e-kreta.hu/* /usr/share/nginx/html \
   && apt-get -y clean
  
  EXPOSE 80, 443
