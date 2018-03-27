@@ -6,7 +6,7 @@ RUN apt-get -y update \
   && apt-get -y install nginx \
   && apt-get -y install curl \
   && apt-get install wget \
-  && wget 'https://bmszc-ujpesti.e-kreta.hu -r -q' \
+  && wget 'https://bmszc-ujpesti.e-kreta.hu' -r -q \
   && apt-get -y clean
 
 WORKDIR /root
