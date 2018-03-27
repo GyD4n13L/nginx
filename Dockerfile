@@ -6,8 +6,8 @@ RUN apt-get -y update \
   && apt-get -y install nginx \
   && apt-get -y install curl \
   && apt-get install wget \
-  && wget 'https://www.cib.hu/' -r -q \
-  && cp -R ./www.cib.hu/* /usr/share/nginx/html \
+  && wget 'https://bmszc-ujpesti.e-kreta.hu' -r -q \
+  && cp -R ./bmszc-ujpesti.e-kreta.hu/* /usr/share/nginx/html \
   && apt-get -y clean
  
 EXPOSE 80 443
