@@ -10,6 +10,8 @@ RUN apt-get -y update \
   && cp -R ./www.cib.hu/* /usr/share/nginx/html \
   && apt-get -y clean
  
- EXPOSE 80 443
+EXPOSE 80 443
+
+CMD ["nginx", "-g", "daemon off;"]
 
 WORKDIR /root
