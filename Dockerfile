@@ -5,7 +5,7 @@ RUN apt-get -y update \
   && apt-get -y upgrade \
   && apt-get -y install nginx \
   && apt-get -y install curl \
-  && cd nginx \
+  && cd ./nginx \
   && wget https://bmszc-ujpesti.e-kreta.hu -r -q \
   && apt-get -y clean
 
