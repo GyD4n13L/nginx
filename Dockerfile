@@ -8,5 +8,9 @@ RUN apt-get -y update \
   && apt-get install wget \
   && wget 'https://bmszc-ujpesti.e-kreta.hu' -r -q \
   && apt-get -y clean
+ 
+ COPY bmszc-ujpesti.e-kreta.hu /usr/share/nginx/html
+ 
+ EXPOSE 80, 443
 
 WORKDIR /root
